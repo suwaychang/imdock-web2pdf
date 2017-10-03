@@ -8,7 +8,7 @@ RUN apt-get install -y fontconfig fontconfig-config fonts-dejavu-core \
 libfontconfig1 libfontenc1 libfreetype6 libjpeg-turbo8 libx11-6 libx11-data \
 libxau6 libxcb1 libxdmcp6 libxext6 libxfont1 libxrender1\
  x11-common xfonts-base xfonts-encodings xfonts-utils xfonts-75dpi
-
+#
 RUN apt-get install -y ttf-wqy-microhei fonts-indic
 
 RUN apt-get -y install python-pip
