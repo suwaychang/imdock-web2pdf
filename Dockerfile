@@ -15,6 +15,8 @@ RUN apt-get -y install python-pip
 
 RUN apt-get -y install gunicorn
 
+RUN useradd -ms /bin/bash -G root web2pdf
+
 RUN mkdir -p /app
 
 COPY Web2PDF-api/. /app
