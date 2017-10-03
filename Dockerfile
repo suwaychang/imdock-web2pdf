@@ -31,9 +31,3 @@ EXPOSE 8080
 
 USER web2pdf
 ENTRYPOINT ["gunicorn", "-b :8080", "-w 4", "app:app"]
-
-
-# Executing supervisord
-# -n / --nodaemon : runs in foreground ( required for docker )
-# -c <configfile> : specifies the config file
-ENTRYPOINT /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
