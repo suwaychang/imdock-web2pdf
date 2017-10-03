@@ -14,7 +14,7 @@ services:
         container_name: web2pdf
         working_dir: /app
         ports:
-            - "3380:8080"
+            - "8080:8080"
 #            - "9000:9000"
 networks:
     default:
