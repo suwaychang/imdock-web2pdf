@@ -1,9 +1,10 @@
 FROM ubuntu:16.04
+MAINTAINER Suway Chang<solzxeramdj@gmail.com>
 #
 RUN apt-get update; apt-get install -y curl software-properties-common
 #
 WORKDIR /root
-
+#
 RUN apt-get install -y fontconfig fontconfig-config fonts-dejavu-core \
 libfontconfig1 libfontenc1 libfreetype6 libjpeg-turbo8 libx11-6 libx11-data \
 libxau6 libxcb1 libxdmcp6 libxext6 libxfont1 libxrender1\
