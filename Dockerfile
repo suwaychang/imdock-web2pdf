@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
-
+#
 RUN apt-get update; apt-get install -y curl software-properties-common
-
+#
 WORKDIR /root
 
 RUN apt-get install -y fontconfig fontconfig-config fonts-dejavu-core \
