@@ -1,8 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Suway Chang<solzxeramdj@gmail.com>
 #
-#RUN apt-get update -y
-RUN apt-get install -y curl software-properties-common
+RUN apt-get update; apt-get install -y curl software-properties-common
 #
 WORKDIR /root
 #
