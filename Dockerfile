@@ -1,7 +1,8 @@
 FROM ubuntu:16.04
 MAINTAINER Suway Chang<solzxeramdj@gmail.com>
 #
-RUN apt-get update; apt-get install -y curl software-properties-common
+#RUN apt-get update -y
+RUN apt-get install -y curl software-properties-common
 #
 WORKDIR /root
 #
@@ -25,6 +26,8 @@ WORKDIR /app
 RUN chown -R root:root /app
 RUN chmod -R u+w,g+w /app
 RUN python setup.py develop
+
+USER root
 
 EXPOSE 8080
 
