@@ -12,7 +12,7 @@ RUN apt-get install -y fontconfig fontconfig-config fonts-dejavu-core \
 	x11-common xfonts-base xfonts-encodings xfonts-utils xfonts-75dpi
 # 安裝 CJK 字型
 RUN apt-get install -y ttf-wqy-microhei fonts-indic
-# 安裝 Python 根元件
+# 安裝 Python 元件
 RUN apt-get -y install python-pip
 RUN apt-get -y install gunicorn
 
