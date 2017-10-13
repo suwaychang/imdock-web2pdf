@@ -22,7 +22,6 @@ ubuntu(Python)
 ```txt
 {project-name}
 ├── imdock-html2pdf
-│   ├── conf/
 │   ├── script
 │   ├── test
 │   ├── Dockerfile
