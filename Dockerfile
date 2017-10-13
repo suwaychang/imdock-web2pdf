@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Suway Chang<solzxeramdj@gmail.com>
 #
 RUN apt-get update -y
-RUN apt-get install -y curl software-properties-common
+RUN apt-get install -y curl software-properties-common git
 #
 WORKDIR /root
 #
@@ -18,8 +18,9 @@ RUN apt-get -y install python-pip
 RUN apt-get -y install gunicorn
 
 #RUN useradd -ms /bin/bash -G root web2pdf
-
-ADD Web2PDF-api /app
+RUN git clone https://github.com/warenix/Web2PDF.git
+RUN mkdie -p /app
+RUN cp -R Web2PDF/docker/Web2PDF-api/* /app
 
 WORKDIR /app
 
