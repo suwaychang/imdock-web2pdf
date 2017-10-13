@@ -33,7 +33,7 @@ ubuntu(Python)
 ssh 下執行
 ```txt
 curl -H "Content-Type: application/json" \
-	-d '{"url":"http://hk.yahoo.com"}' \
+	-d '{"url":"http://www.google.com"}' \
 	http://localhost:8080/pdf/convert
 
 ```
@@ -43,7 +43,7 @@ curl -H "Content-Type: application/json" \
  {
      "result": {
          "pdf_url": "http://localhost:8080/pdfout/yv2iWaQOLPN.pdf",
-         "url": "http://hk.yahoo.com"
+         "url": "http://www.google.com"
      }
  }
 ```
