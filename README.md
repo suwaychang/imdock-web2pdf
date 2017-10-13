@@ -34,7 +34,7 @@ ssh 下執行
 ```txt
 curl -H "Content-Type: application/json" \
 	-d '{"url":"http://www.google.com"}' \
-	http://localhost:8080/pdf/convert
+	http://localhost:8080/convert
 
 ```
 
