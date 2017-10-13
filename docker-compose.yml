@@ -8,16 +8,12 @@ services:
     imdock-web2pdf:
         restart: always
         image: suwaychang0608/imdock-web2pdf
-#        build:
-#          context: .
-#          dockerfile: Dockerfile
-        container_name: web2pdf
+        container_name: imdock-web2pdf
         working_dir: /app
         ports:
             - "8080:8080"
-#            - "9000:9000"
        volumes:
-          - ./pdfout:/app/static/pdfout
+          - .:/app/static/pdfout
 networks:
     default:
         external:

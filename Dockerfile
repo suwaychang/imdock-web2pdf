@@ -28,7 +28,6 @@ RUN chmod -R u+w,g+w /app
 RUN python setup.py develop
 USER root
 
-VOLUME ["/app/static/pdfout"]
 EXPOSE 8080
 
 ENTRYPOINT ["gunicorn", "-b :8080", "-w 4", "app:app"]
